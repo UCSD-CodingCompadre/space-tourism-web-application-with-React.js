@@ -1,0 +1,94 @@
+@import '../../utilities/Variables.scss';
+
+*
+{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.Home
+{
+    background-image: url(../../assets/home/background-home-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: none;
+    min-height: 100vh !important;
+    width: 100vw;
+    .page
+    {
+        background-color: transparent;
+        height: calc(100vh - 90px);
+        max-height: none;
+        max-width: none;
+        width: 100% !important;
+        .text-container
+        {
+            display: block;
+            font-family: $font;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 350px;
+            text-align: center;
+            .text-1
+            {
+                color: $textColor2;
+                font-size: $navText;
+                margin-top: 40px;
+            }
+            .text-2
+            {
+                color: $textColor3;
+                font-size: 80px;
+                margin-top: 40px;
+            }
+            .text-3
+            {
+                color: $textColor2;
+                font-size: $navText;
+                margin-top: 20px;
+            }
+        }
+        .explore-button
+        {
+            align-items: center;
+            display: flex;
+            background-color: transparent;
+            border: 0px solid #707070;
+            border-radius: 50%;
+            color: $textColor1;
+            font-family: $font;
+            font-size: 20px;
+            height: 170px;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 40px;
+            transition: .5s;
+            width: 170px;
+            &:hover
+            {
+                border: 20px solid #707070;
+            }
+        }
+        .explore-button-effect
+        {
+            align-items: center;
+            display: flex;
+            background-color: $textColor3;
+            border: 0px solid #707070;
+            border-radius: 50%;
+            bottom: 150px;
+            color: $textColor1;
+            font-family: $font;
+            font-size: 20px;
+            height: 150px;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            transition: .5s;
+            width: 150px;
+        }
+    }
+}

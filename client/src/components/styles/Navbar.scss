@@ -1,0 +1,100 @@
+@import '../../utilities/Variables.scss';
+
+*
+{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.Navbar
+{
+    display: block !important;
+    height: 90px;
+    position: relative !important;
+    width: 100vw !important;
+    .component
+    {
+        align-items: center;
+        background-color:transparent !important;
+        display: flex;
+        height: 90px;
+        justify-content: space-between;
+        max-width: 100vw !important;
+        padding: 25px;
+        width: 100% !important;
+        .logo
+        {
+            height: 40px;
+            width: 40px;
+        }
+        .hamburger-icon
+        {
+            cursor: pointer;
+            display: block;
+            height: 21px;
+            transition: 1s;
+            width: 24px;
+        }
+    }
+    .mobile-side-bar
+    {
+        backdrop-filter: blur(8px);
+        background-color: rgba(255, 255, 255, 0.04);
+        display: flex;
+        flex-direction: column;
+        height: 100vh !important;
+        max-width: 270px !important;
+        right: 0px;
+        position: absolute;
+        transition: 1s;
+        top: -100vh;
+        width: 270px;
+        .close-icon 
+        {
+            align-self: flex-end;
+            cursor: pointer;
+            display: block;
+            height: 20px;
+            margin-right: 25px !important;
+            margin-top: 25px !important;
+            position: relative;
+            width: 20px;
+        }
+        #first-link
+        {
+            margin-top: 60px !important;
+        }
+        .unactive-link
+        {
+            border: 0px solid lightblue !important;
+            color: $textColor3 !important;
+            cursor: pointer;
+            font-family: $font !important;
+            font-size: $navText;
+            margin-top: 40px;
+            max-width: none;
+            padding-left: 25px;
+            text-decoration: none !important;
+            transition: .05s;
+            width: 100% !important;
+            &:hover
+            {
+                border-right: 3px solid lightblue !important;
+            }
+        }
+        .active-link
+        {
+            border-right: 3px solid lightblue !important;
+            color: $textColor3 !important;
+            cursor: pointer;
+            font-family: $font !important;
+            font-size: $navText;
+            margin-top: 40px;
+            max-width: none;
+            padding-left: 25px;
+            text-decoration: none !important;
+            width: 100% !important;
+        }
+    }
+}

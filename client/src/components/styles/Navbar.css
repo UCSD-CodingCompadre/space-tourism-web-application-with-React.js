@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.Navbar {
+  display: block !important;
+  height: 90px;
+  position: relative !important;
+  width: 100vw !important;
+}
+.Navbar .component {
+  align-items: center;
+  background-color: transparent !important;
+  display: flex;
+  height: 90px;
+  justify-content: space-between;
+  max-width: 100vw !important;
+  padding: 25px;
+  width: 100% !important;
+}
+.Navbar .component .logo {
+  height: 40px;
+  width: 40px;
+}
+.Navbar .component .hamburger-icon {
+  cursor: pointer;
+  display: block;
+  height: 21px;
+  transition: 1s;
+  width: 24px;
+}
+.Navbar .mobile-side-bar {
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.04);
+  display: flex;
+  flex-direction: column;
+  height: 100vh !important;
+  max-width: 270px !important;
+  right: 0px;
+  position: absolute;
+  transition: 1s;
+  top: -100vh;
+  width: 270px;
+}
+.Navbar .mobile-side-bar .close-icon {
+  align-self: flex-end;
+  cursor: pointer;
+  display: block;
+  height: 20px;
+  margin-right: 25px !important;
+  margin-top: 25px !important;
+  position: relative;
+  width: 20px;
+}
+.Navbar .mobile-side-bar #first-link {
+  margin-top: 60px !important;
+}
+.Navbar .mobile-side-bar .unactive-link {
+  border: 0px solid lightblue !important;
+  color: #FFFFFF !important;
+  cursor: pointer;
+  font-family: "Barlow", sans-serif !important;
+  font-size: 16px;
+  margin-top: 40px;
+  max-width: none;
+  padding-left: 25px;
+  text-decoration: none !important;
+  transition: 0.05s;
+  width: 100% !important;
+}
+.Navbar .mobile-side-bar .unactive-link:hover {
+  border-right: 3px solid lightblue !important;
+}
+.Navbar .mobile-side-bar .active-link {
+  border-right: 3px solid lightblue !important;
+  color: #FFFFFF !important;
+  cursor: pointer;
+  font-family: "Barlow", sans-serif !important;
+  font-size: 16px;
+  margin-top: 40px;
+  max-width: none;
+  padding-left: 25px;
+  text-decoration: none !important;
+  width: 100% !important;
+}/*# sourceMappingURL=Navbar.css.map */

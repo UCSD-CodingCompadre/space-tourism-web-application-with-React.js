@@ -1,0 +1,20 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.Destination
+{
+    height: calc(100vh - 90px);
+    width: 100vw;
+    .page
+    {
+        background-color: black;
+        min-height: 100% !important;
+        max-height: none;
+        max-width: none;
+        width: 100% !important;
+    }
+}
