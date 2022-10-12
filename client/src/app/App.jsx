@@ -7,6 +7,8 @@ import{Technology} from '../pages/Technology';
 
 
 function App() {
+  document.body.classList.add('body-styling');  
+
   return (
     <div 
     className="App"

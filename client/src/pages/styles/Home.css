@@ -1,5 +1,5 @@
 * {
-  box-sizing: border-box;
+  box-sizing: border-box !important;
   margin: 0px;
   padding: 0px;
 }
@@ -10,13 +10,14 @@
   background-size: cover;
   max-height: none;
   min-height: 100vh !important;
+  max-width: 100vw !important;
   width: 100vw;
 }
 .Home .page {
   background-color: transparent;
   height: calc(100vh - 90px);
   max-height: none;
-  max-width: none;
+  max-width: 100vw;
   width: 100% !important;
 }
 .Home .page .text-container {
@@ -45,38 +46,90 @@
 .Home .page .explore-button {
   align-items: center;
   display: flex;
-  background-color: transparent;
-  border: 0px solid #707070;
-  border-radius: 50%;
-  color: #0B0D17;
-  font-family: "Barlow", sans-serif;
-  font-size: 20px;
-  height: 170px;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 40px;
-  transition: 0.5s;
-  width: 170px;
-}
-.Home .page .explore-button:hover {
-  border: 20px solid #707070;
-}
-.Home .page .explore-button-effect {
-  align-items: center;
-  display: flex;
   background-color: #FFFFFF;
-  border: 0px solid #707070;
   border-radius: 50%;
-  bottom: 150px;
   color: #0B0D17;
+  cursor: pointer;
   font-family: "Barlow", sans-serif;
   font-size: 20px;
   height: 150px;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
-  transition: 0.5s;
+  margin-top: 60px;
+  transition: 0.75s;
   width: 150px;
+}
+.Home .page .explore-button:hover {
+  box-shadow: 0px 0px 0px 25px rgba(151, 151, 151, 0.15);
+}
+
+@media only screen and (min-width: 768px) {
+  .Home {
+    background-image: url("../../assets/home/background-home-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: none;
+    min-height: 100vh !important;
+    max-width: 100vw !important;
+  }
+  .Home .page {
+    height: calc(100vh - 100px);
+  }
+  .Home .page .text-container {
+    max-width: 400px;
+  }
+  .Home .page .text-container .text-1 {
+    font-size: 20px;
+    margin-top: 80px;
+  }
+  .Home .page .text-container .text-2 {
+    margin-top: 60px;
+  }
+  .Home .page .text-container .text-3 {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  .Home .page .explore-button {
+    height: 220px;
+    margin-top: 70px;
+    width: 220px;
+  }
+  .Home .page .explore-button:hover {
+    box-shadow: 0px 0px 0px 30px rgba(151, 151, 151, 0.15);
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .Home {
+    background-image: url("../../assets/home/background-home-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: none;
+    min-height: 100vh !important;
+    max-width: 100vw !important;
+  }
+  .Home .page {
+    align-items: center;
+    display: flex;
+    height: calc(100vh - 140px);
+  }
+  .Home .page .text-container {
+    max-width: 770px;
+    text-align: left;
+  }
+  .Home .page .text-container .text-1 {
+    font-size: 28px;
+    margin-top: 0px;
+  }
+  .Home .page .text-container .text-2 {
+    font-size: 150px;
+  }
+  .Home .page .explore-button {
+    height: 280px;
+    margin-top: 0px;
+    width: 280px;
+  }
+  .Home .page .explore-button:hover {
+    box-shadow: 0px 0px 0px 40px rgba(151, 151, 151, 0.15);
+  }
 }/*# sourceMappingURL=Home.css.map */

@@ -35,11 +35,7 @@ export const Home = () =>
                 <div 
                 className="explore-button"
                 >
-                </div>
-                <div 
-                className="explore-button-effect"
-                >
-                     EXPLORE
+                    EXPLORE
                 </div>
             </section>
         </div>
