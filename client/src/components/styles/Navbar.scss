@@ -84,6 +84,7 @@
         transition: .75s;
         top: -100vh;
         width: 270px;
+        z-index: 1;
         .close-icon 
         {
             align-self: flex-end;
@@ -114,12 +115,12 @@
             width: 100% !important;
             &:hover
             {
-                border-right: 3px solid lightblue !important;
+                border-right: 5px solid $textColor2 !important;
             }
         }
         .active-link
         {
-            border-right: 3px solid lightblue !important;
+            border-right: 5px solid $textColor2 !important;
             color: $textColor3 !important;
             cursor: pointer;
             font-family: $font !important;
@@ -188,6 +189,7 @@
                         bottom: 0px;
                         content: '';
                         height: .175rem;
+                        left: 0px;
                         position: absolute;
                         transform: scale(0,1);
                         transform-origin: 0% 100%;

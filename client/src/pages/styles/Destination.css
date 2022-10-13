@@ -5,13 +5,167 @@
 }
 
 .Destination {
-  height: calc(100vh - 90px);
+  background-image: url("../../assets/destination/background-destination-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto !important;
+  max-height: none;
+  min-height: 100vh !important;
+  max-width: 100vw !important;
   width: 100vw;
 }
 .Destination .page {
-  background-color: black;
-  min-height: 100% !important;
+  background-color: transparent;
+  height: 100%;
   max-height: none;
-  max-width: none;
+  max-width: 100vw;
+  min-height: calc(100vh - 90px);
   width: 100% !important;
+}
+.Destination .page .desktop-left-flex-container {
+  width: 100%;
+}
+.Destination .page .desktop-left-flex-container .header {
+  color: rgba(112, 112, 112, 0.5);
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  margin-top: 20px;
+  text-align: center;
+}
+.Destination .page .desktop-left-flex-container .header .header-special-text {
+  color: #FFFFFF;
+  margin-left: 10px;
+}
+.Destination .page .desktop-left-flex-container .planet {
+  display: block;
+  height: 170px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  width: 170px;
+}
+.Destination .desktop-right-flex-container {
+  width: 100%;
+}
+.Destination .desktop-right-flex-container .nav-container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.Destination .desktop-right-flex-container .nav-container .active-planet {
+  color: #FFFFFF;
+  cursor: pointer;
+  display: block;
+  font-family: "Barlow", sans-serif;
+  font-size: 14px;
+  margin-right: 10px;
+  padding-bottom: 4px;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.Destination .desktop-right-flex-container .nav-container .active-planet:hover::after {
+  transform: scale(1, 1);
+}
+.Destination .desktop-right-flex-container .nav-container .active-planet::after {
+  background-color: #FFFFFF;
+  bottom: 0px;
+  content: "";
+  height: 0.175rem;
+  left: 0px;
+  position: absolute;
+  width: 100%;
+}
+.Destination .desktop-right-flex-container .nav-container .unactive-planet {
+  color: #D0D6F9;
+  cursor: pointer;
+  display: block;
+  font-family: "Barlow", sans-serif;
+  font-size: 14px;
+  margin-right: 10px;
+  padding-bottom: 4px;
+  position: relative;
+}
+.Destination .desktop-right-flex-container .nav-container .unactive-planet:hover::after {
+  transform: scale(1, 1);
+}
+.Destination .desktop-right-flex-container .nav-container .unactive-planet::after {
+  background-color: rgba(255, 255, 255, 0.25);
+  bottom: 0px;
+  content: "";
+  height: 0.175rem;
+  left: 0px;
+  position: absolute;
+  transform: scale(0, 1);
+  transform-origin: 0% 100%;
+  transition: transform 0.75s ease;
+  width: 100%;
+}
+.Destination .desktop-right-flex-container .planet-heading {
+  color: #FFFFFF;
+  font-family: "Barlow", sans-serif;
+  font-size: 56px;
+  margin-top: 10px;
+  text-align: center;
+}
+.Destination .desktop-right-flex-container .planet-description {
+  color: #D0D6F9;
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  line-height: 1.25rem;
+  padding: 0px 15px;
+  text-align: center;
+}
+.Destination .desktop-right-flex-container .dividing-line {
+  background-color: rgba(151, 151, 151, 0.3);
+  border: none;
+  display: block;
+  height: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  outline: none;
+  width: 75%;
+}
+.Destination .desktop-right-flex-container .tablet-flex-container {
+  width: 100%;
+}
+.Destination .desktop-right-flex-container .tablet-flex-container .container {
+  width: 100%;
+}
+.Destination .desktop-right-flex-container .tablet-flex-container .container .header-2 {
+  color: #D0D6F9;
+  font-family: "Barlow", sans-serif;
+  font-size: 14px;
+  margin-top: 20px;
+  text-align: center;
+}
+.Destination .desktop-right-flex-container .tablet-flex-container .container .distance {
+  color: #FFFFFF;
+  font-family: "Barlow", sans-serif;
+  font-size: 28px;
+  margin-top: 5px;
+  text-align: center;
+}
+.Destination .desktop-right-flex-container .tablet-flex-container .container .header-3 {
+  color: #D0D6F9;
+  font-family: "Barlow", sans-serif;
+  font-size: 14px;
+  margin-top: 20px;
+  text-align: center;
+}
+.Destination .desktop-right-flex-container .tablet-flex-container .container .travel-time {
+  color: #FFFFFF;
+  font-family: "Barlow", sans-serif;
+  font-size: 28px;
+  margin-top: 5px;
+  padding-bottom: 40px;
+  text-align: center;
 }/*# sourceMappingURL=Destination.css.map */

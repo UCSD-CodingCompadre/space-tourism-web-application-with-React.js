@@ -70,6 +70,7 @@
   transition: 0.75s;
   top: -100vh;
   width: 270px;
+  z-index: 1;
 }
 .Navbar .mobile-side-bar .close-icon {
   align-self: flex-end;
@@ -98,10 +99,10 @@
   width: 100% !important;
 }
 .Navbar .mobile-side-bar .unactive-link:hover {
-  border-right: 3px solid lightblue !important;
+  border-right: 5px solid #D0D6F9 !important;
 }
 .Navbar .mobile-side-bar .active-link {
-  border-right: 3px solid lightblue !important;
+  border-right: 5px solid #D0D6F9 !important;
   color: #FFFFFF !important;
   cursor: pointer;
   font-family: "Barlow", sans-serif !important;
@@ -162,6 +163,7 @@
     bottom: 0px;
     content: "";
     height: 0.175rem;
+    left: 0px;
     position: absolute;
     transform: scale(0, 1);
     transform-origin: 0% 100%;

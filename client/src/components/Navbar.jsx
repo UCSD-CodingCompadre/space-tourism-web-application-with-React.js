@@ -6,15 +6,23 @@ import Logo from '../assets/shared/logo.svg';
 
 export const Navbar = () =>
 {
+    // Auto fix overflow Y scrolling if a navlink is clicked on mobile
+    const htmlBody = document.getElementById('body');
+    htmlBody.style.overflowY  = 'auto';
+
     const openSideBar = () =>
     {
         const sideBar = document.getElementById('side-bar');
+        const htmlBody = document.getElementById('body');
+        htmlBody.style.overflowY  = 'hidden';
         sideBar.style.top = '0px';
     }
 
     const closeSideBar = () =>
     {
         const sideBar = document.getElementById('side-bar');
+        const htmlBody = document.getElementById('body');
+        htmlBody.style.overflowY  = 'auto';
         sideBar.style.top = '-100vh';
     }
 
