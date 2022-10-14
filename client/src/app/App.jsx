@@ -5,7 +5,6 @@ import {Destination} from '../pages/Destination';
 import {Home} from '../pages/Home';
 import{Technology} from '../pages/Technology';
 
-
 function App() {
   document.body.classList.add('body-styling');  
 

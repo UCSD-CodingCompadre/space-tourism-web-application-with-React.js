@@ -61,6 +61,7 @@ export const Destination = () =>
         planetTabs[locator].classList.add('active-planet');
     }
 
+
     return (
         <div 
         className="Destination"

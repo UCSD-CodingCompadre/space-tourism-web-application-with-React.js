@@ -191,3 +191,140 @@
         }
     }
 }
+
+@media only screen and (min-width: 768px)
+{
+    .Destination
+    {
+        background-image: url('../../assets/destination/background-destination-tablet.jpg');
+        .page 
+        {
+            height: calc(100vh - 100px);
+            .desktop-left-flex-container
+            {
+                .header
+                {
+                    font-size: 20px;
+                    margin-top: 40px;
+                    padding-left: 60px;
+                    text-align: left;
+                }
+                .planet
+                {
+                    height: 300px;
+                    margin-top: 60px;
+                    width: 300px;
+                }
+            }
+            .desktop-right-flex-container
+            {
+                .nav-container
+                {
+                    .unactive-planet
+                    {
+                        font-size: 20px;
+                        margin-right: 15px;
+                    }
+                    .active-planet
+                    {
+                        font-size: 20px;
+                        margin-right: 15px;
+                    }
+                }
+                .planet-heading
+                {
+                    font-size: 80px;
+                }
+                .planet-description
+                {
+                    padding: 0px 120px;
+                }
+                .dividing-line 
+                {
+                    width: 85%;
+                }
+                .tablet-flex-container
+                {
+                    align-items: center;
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    .container
+                    {
+                        .travel-time
+                        {
+                            padding-bottom: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1440px)
+{
+    .Destination
+    {
+        background-image: url('../../assets/destination/background-destination-desktop.jpg');
+        .page
+        {
+            align-items: center;
+            display: flex;
+            height: calc(100vh - 140px);
+            justify-content: space-between;
+            .desktop-left-flex-container
+            {
+                .header
+                {
+                    font-size: $heading5;
+                    padding-left: 0px;
+                    text-align: center;
+                }
+                .planet
+                {
+                    height: 445px;
+                    width: 445px;
+                }
+            }
+            .desktop-right-flex-container
+            {
+                align-items: flex-start;
+                display: flex;
+                flex-direction: column;
+                .nav-container
+                {
+                    margin: 0px;
+                }
+                .planet-heading
+                {
+                    font-size: $heading2;
+                }
+                .planet-description
+                {
+                    padding-left: 0px;
+                    padding-right: 400px;
+                    line-height: 1.75rem;
+                    text-align: left;
+                    width: 830px;
+                }
+                .dividing-line
+                {
+                    margin: 0px;
+                    margin-top: 40px;
+                    width: 830px;
+                }
+                .tablet-flex-container
+                {
+                    .container
+                    {
+                        align-items: flex-start;
+                        display: flex;
+                        flex-direction: column;
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
